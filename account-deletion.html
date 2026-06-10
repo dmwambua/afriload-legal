@@ -1,3 +1,5 @@
+cd ~/projects/Afriload_001/legal
+cat > account-deletion.html << 'AFRILOADDELETIONEOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +101,11 @@
   </div>
 
   <p>
-    AfriLoad ("we", "us", "our") is committed to giving users control over their personal data. This page explains how to delete your AfriLoad account, what data is removed, what data we may retain, and how long the process takes.
+    AfriLoad ("we", "us", "our") is committed to giving users control over their personal data. This page explains how to request deletion of your AfriLoad account, what data is removed, what data we may retain, and how long the process takes.
+  </p>
+
+  <p>
+    AfriLoad is currently in early development, and an in-app self-service deletion button is not yet available. We are committed to processing email-based deletion requests promptly and transparently while we build the in-app option.
   </p>
 
   <p>
@@ -108,20 +114,9 @@
 
   <h2>How to delete your account</h2>
 
-  <h3>Option 1: In-app deletion (preferred)</h3>
-  <ol>
-    <li>Open the AfriLoad app</li>
-    <li>Sign in to your account</li>
-    <li>Go to <strong>Profile</strong> (bottom navigation)</li>
-    <li>Tap <strong>Settings</strong> or your profile icon</li>
-    <li>Scroll down and tap <strong>Delete account</strong></li>
-    <li>Confirm by entering the OTP sent to your registered phone number</li>
-    <li>Your account deletion request is queued for processing</li>
-  </ol>
-
-  <h3>Option 2: Email request</h3>
+  <h3>Email request</h3>
   <p>
-    If you cannot access your account or prefer to request deletion by email, contact us:
+    To request deletion of your AfriLoad account, contact us:
   </p>
   <p>
     Email: <a href="mailto:zawadilabs@gmail.com">zawadilabs@gmail.com</a><br>
@@ -138,6 +133,10 @@
   <p>
     We will respond to your email within 7 business days to confirm we have received your request, and your account will be processed for deletion within 30 days of confirmation.
   </p>
+
+  <div class="callout">
+    <strong>In-app deletion coming soon.</strong> We are building a self-service "Delete account" option inside the AfriLoad app. Once available, users will be able to delete their account directly from the app without needing to email us. This page will be updated with step-by-step instructions when the feature is released.
+  </div>
 
   <h2>What data is deleted</h2>
 
@@ -181,12 +180,12 @@
   <h2>How long does deletion take</h2>
 
   <div class="callout">
-    <strong>30-day processing window.</strong> From the date you submit a deletion request (in-app or via email), we will complete the deletion of all eligible data within 30 days.
+    <strong>30-day processing window.</strong> From the date you submit a deletion request via email, we will complete the deletion of all eligible data within 30 days.
   </div>
 
   <p>Typical timeline:</p>
   <ul>
-    <li><strong>Day 0:</strong> You submit the deletion request</li>
+    <li><strong>Day 0:</strong> You send the deletion request email</li>
     <li><strong>Day 1 to 7:</strong> We confirm receipt of your request and verify your identity</li>
     <li><strong>Day 7 to 30:</strong> We process the deletion across all systems (active database, backups, third-party services)</li>
     <li><strong>Day 30:</strong> Deletion is complete; you will receive a final confirmation email</li>
@@ -251,3 +250,6 @@
   </div>
 </body>
 </html>
+AFRILOADDELETIONEOF
+
+ls -lh account-deletion.html
